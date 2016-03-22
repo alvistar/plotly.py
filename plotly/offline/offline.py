@@ -101,6 +101,8 @@ def _plot_html(figure_or_data, show_link, link_text,
     config = {}
     config['showLink'] = show_link
     config['linkText'] = link_text
+    config['modeBarButtonsToRemove']= ['sendDataToCloud']
+    config['displaylogo'] = False
     jconfig = json.dumps(config)
 
     # TODO: The get_config 'source of truth' should
